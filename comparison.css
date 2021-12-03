@@ -1,0 +1,59 @@
+.nav {
+  background: deepskyblue
+}
+
+.head {
+  background: gray
+}
+
+.body {
+  background: lightgray;
+}
+
+.box {
+  width: 825px;
+  height: 325px;
+  padding: 20px;
+  color: #fff;
+  background: lightslategrey;
+}
+
+
+
+h1 {
+  color: navy;
+  text-indent: 30px;
+  word-wrap: unset;
+}
+
+h5 {
+  margin: 35px;
+  color: navy;
+}
+
+h3 {
+  text-underline-position: below;
+}
+
+p {
+  color: navy;
+  text-indent: 30px;
+  text-transform: uppercase;
+}
+
+em {
+  align-content:stretch;
+  color: whitesmoke;
+}
+
+article {
+  color: lightgray
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.lightslategray {
+  background: lightslategrey;
+}
