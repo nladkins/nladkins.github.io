@@ -76,7 +76,7 @@ function getPlots(idSelected) {
     var data2 = [trace2]
     
     var layout2 = {
-      title: "Top 10 operational taxonomic units (OTUs) occurence per Sample (bubble size proportional to amount)",
+      title: "Top 10 operational taxonomic units (OTUs) occurence per Sample",
       xaxis:{title: "OTU ID"},
       yaxis:{title: "Sample Values"},
     }
