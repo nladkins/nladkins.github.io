@@ -5,37 +5,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Leaflet-Challenge</title>
-  <!-- <h1>Global Earthquakes with a Magnitude of 4.5 or Higher over the Last 7 Days</h1>
-  <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php">Source:  United States Geological Survey</a>
-  <br>
-  <br>
-  <a href="https://github.com/nladkins/leaflet-challenge">GitHub Repository</a>
-  <br> -->
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin="" />
-
-  <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
 
-  <!-- The div that holds our map -->
-  <div id="map"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <h3>Use the interactive charts below to explore the dataset</h3>
+        <br>
+        <br>
+        <p>In January 2011, North Carolina State University (NCSU) launched 
+          a Belly Button Biodiversity study to investigate the microbes 
+          inhabiting the human belly button.  Their study (Latimer et al.) 
+          revealed that the belly button has a lot of diverse microbials that 
+          inhabit this environment.  Of the 60 navels samples, 2,300 species were 
+          identifie.  Eight of those were identified as being frequent.  
+          This data is visualized below focusing on the top 10 microbials 
+          per sample.</p>
+          <br>
+          <br>
+          <a href="https://github.com/nladkins/interactive-web-visualizations">GitHub Repository</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-3">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-6">
+        <div id="bar"></div>
+      </div>
+      <!-- <div class="col-md-8">
+        <div id="gauge"></div>
+      </div> -->
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-9">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-    crossorigin=""></script>
-  <!-- D3 JavaScript -->
   <script src="https://d3js.org/d3.v5.min.js"></script>
-  <!-- API key
-  <script type="text/javascript" src="static/js/config.js"></script> -->
-  <!-- Our JavaScript -->
-  <script type="text/javascript" src="static/js/logic.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/app.js"></script>
+  <!-- <script src="./static/js/bonus.js"></script> -->
+  
 </body>
 
 </html>
